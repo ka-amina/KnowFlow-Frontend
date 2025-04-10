@@ -7,6 +7,9 @@ import Footer from "./components/common/Footer";
 import Home from "./pages/Home";
 import Course from "./pages/Courses";
 import CourseForm from "./components/courses/CourseForm";
+import Categories from "./pages/Categories";
+import CategoryForm from "./components/categories/CategoryForm";
+
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
             <Route path="/courses/create" element={<CourseForm />} />
             <Route path="/courses/edit/:id" element={<CourseForm />} />
             {/* <Route path="/courses/:id" element={<CourseDetail />} /> */}
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/categories/create" element={<CategoryForm />} />
+            <Route path="/categories/edit/:id" element={<CategoryForm />} />
             <Route path="*" element={<div>Not Found!</div>} />
           </Routes>
         </main>

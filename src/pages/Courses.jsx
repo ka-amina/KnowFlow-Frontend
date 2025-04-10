@@ -42,13 +42,15 @@ const Course = () => {
       </div>
       <div>
         {courses.length > 0 ? (
-          courses.map((course) => (
-            <CourseCard
-              key={course.id}
-              course={course}
-              onDelete={() => handleDelete(course.id)}
-            />
-          ))
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            {courses.map((course) => (
+              <CourseCard
+                key={course.id}
+                course={course}
+                onDelete={() => handleDelete(course.id)}
+              />
+            ))}
+          </div>
         ) : (
           <p>Loading courses...</p>
         )}
