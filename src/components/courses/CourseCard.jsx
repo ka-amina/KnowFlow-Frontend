@@ -37,12 +37,12 @@ const CourseCard = ({ course, onDelete }) => {
         </div>
       )}
       <div className="flex justify-end">
-        {/* <Link
+        <Link
           to={`/courses/${course.id}`}
-          className="text-blue-600 hover:text-blue-800 font-medium"
+          className="text-blue-600 hover:text-blue-800 font-medium mr-4"
         >
           View Details
-        </Link> */}
+        </Link>
         <Link
           to={`/courses/edit/${course.id}`}
           className="text-blue-600 hover:text-blue-800 font-medium mr-4"

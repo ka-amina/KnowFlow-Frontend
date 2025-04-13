@@ -14,7 +14,7 @@ const CategoryCard = ({ category, onDelete }) => {
         </Link>
         <button
           onClick={onDelete}
-          className="text-red-600 hover:text-red-800 font-medium"
+          className="text-red-600 hover:text-red-800 font-medium cursor-pointer"
         >
           Delete
         </button>

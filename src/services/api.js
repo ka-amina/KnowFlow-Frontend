@@ -19,6 +19,8 @@ export const courseService = {
   },
   getById: async (id) => {
     const res = await api.get(`/courses/${id}`);
+    // console.log(res.data);
+    
     return res.data;
   },
   create: async (data) => {

@@ -39,26 +39,6 @@ const Header = () => {
                   Categories
                 </NavLink>
               </li>
-              <li>
-                <NavLink 
-                  to="/tags" 
-                  className={({ isActive }) => 
-                    isActive ? "text-blue-600 font-medium" : "text-gray-600 hover:text-blue-600"
-                  }
-                >
-                  Tags
-                </NavLink>
-              </li>
-              <li>
-                <NavLink 
-                  to="/stats" 
-                  className={({ isActive }) => 
-                    isActive ? "text-blue-600 font-medium" : "text-gray-600 hover:text-blue-600"
-                  }
-                >
-                  Stats
-                </NavLink>
-              </li>
             </ul>
           </nav>
         </div>
